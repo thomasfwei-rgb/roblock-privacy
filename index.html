@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy - Roblock</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; padding: 32px 20px 80px; max-width: 820px;
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         line-height: 1.7; color: #1c1c1e; background: #fff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 34px; border-bottom: 1px solid #e5e5ea; padding-bottom: 6px; }
+  .meta { color: #6b6b70; font-size: 14px; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+  th, td { border: 1px solid #d8d8dc; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f5f5f7; }
+  code { background: #f5f5f7; padding: 1px 5px; border-radius: 4px; }
+  ul { padding-left: 22px; }
+  .note { background: #f5f5f7; border-left: 4px solid #0a84ff; padding: 12px 14px; border-radius: 6px; }
+  a { color: #0a66c2; }
+  footer { margin-top: 48px; font-size: 14px; color: #6b6b70; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">
+  Application: <strong>Roblock</strong> (Android package <code>com.roblock.game</code>)<br />
+  Effective date: <strong>2026-08-20</strong> &nbsp;|&nbsp; Last updated: <strong>2026-08-20</strong><br />
+  Developer: <strong>Janet Wang</strong> &nbsp;|&nbsp; Contact: <a href="mailto:janet.yangwang@gmail.com">janet.yangwang@gmail.com</a>
+</p>
+
+<div class="note">
+  Summary: Roblock is a single-player offline game. It has no account system, no login,
+  no in-app purchases and no third-party advertising SDK. Your game progress is stored only
+  on your device. The only data leaving your device is anonymous, aggregated gameplay
+  analytics sent to Google Analytics for Firebase.
+</div>
+
+<h2>1. Scope</h2>
+<p>
+  This Privacy Policy explains what information the Roblock mobile game ("the App", "we")
+  collects, why we collect it, how it is used and shared, and the choices available to you.
+  It applies to the Android version of the App distributed through Google Play.
+</p>
+
+<h2>2. Information we do NOT collect</h2>
+<ul>
+  <li>We do <strong>not</strong> ask you to register an account, and we do not collect your name, email address, phone number or password.</li>
+  <li>We do <strong>not</strong> collect precise or GPS location.</li>
+  <li>We do <strong>not</strong> access your contacts, calendar, SMS, call logs, photos, files, camera or microphone.</li>
+  <li>We do <strong>not</strong> process payments and there are no in-app purchases.</li>
+  <li>We do <strong>not</strong> sell your personal information, and we do not use your data for third-party advertising or credit scoring.</li>
+</ul>
+
+<h2>3. Information we collect</h2>
+
+<h3>3.1 Data stored only on your device</h3>
+<p>
+  The following data is written to the App's private storage on your device
+  (<code>localStorage</code> / app sandbox files). It is not uploaded to us and is not readable by other apps:
+</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th></tr>
+  <tr><td>Game progress: unlocked and cleared levels, star ratings, failure counts, last played level</td><td>Save and restore your progress</td></tr>
+  <tr><td>In-game virtual resources: gold, fragments, energy, hero and turret upgrade levels, missions, patrol / idle timers</td><td>Game economy and progression</td></tr>
+  <tr><td>Settings: background music, sound effects, haptics, left/right-hand layout, volume levels</td><td>Remember your preferences</td></tr>
+  <tr><td>A randomly generated player identifier (UUID v4, key <code>roblock:player-id:v1</code>)</td><td>Distinguish one installation from another in analytics; it is generated on-device and is not derived from any hardware ID, advertising ID, phone number or account</td></tr>
+  <tr><td>Local analytics event log files (app writable path, folder <code>roblock-analytics</code>, capped at 2000 lines)</td><td>Local diagnostics and gameplay tuning by the developer</td></tr>
+</table>
+<p>
+  All of this local data is removed when you uninstall the App or clear the App's data in Android
+  system settings. Automatic Android cloud backup is disabled for the App
+  (<code>android:allowBackup="false"</code>).
+</p>
+
+<h3>3.2 Analytics data sent off the device</h3>
+<p>
+  The App uses <strong>Google Analytics for Firebase</strong> (Firebase project <code>roblcok-2d9d5</code>)
+  to understand how the game is played so we can balance difficulty and fix problems.
+  Events are also sent to Google Analytics 4 through the Measurement Protocol endpoint
+  <code>https://www.google-analytics.com/mp/collect</code>.
+</p>
+<table>
+  <tr><th>Category</th><th>Examples of what is sent</th></tr>
+  <tr><td>App interactions / in-game events</td><td>Level started, level cleared, level failed, energy insufficient, upgrade card selected, rewarded-video placement shown or cancelled, save reset, event timestamp</td></tr>
+  <tr><td>Progression values</td><td>Level ID, segment index, virtual currency amounts, attempt counts, player level</td></tr>
+  <tr><td>Pseudonymous identifier</td><td>The on-device generated player identifier described in 3.1, and the Firebase app-instance ID generated by the Firebase SDK</td></tr>
+  <tr><td>Technical data collected automatically by the Firebase SDK</td><td>App version, device model, operating system version, language, country/region and coarse location inferred by Google from the IP address, first-open and session events</td></tr>
+</table>
+<p>
+  This data is pseudonymous. We do not attempt to re-identify individual users from it, and we do not
+  combine it with any information that identifies you personally.
+</p>
+
+<h2>4. Permissions we request and why</h2>
+<table>
+  <tr><th>Android permission</th><th>Why it is needed</th></tr>
+  <tr><td><code>INTERNET</code></td><td>Send analytics events; the game itself is playable offline</td></tr>
+  <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Detect whether a network connection is available before attempting to report analytics</td></tr>
+  <tr><td><code>ACCESS_WIFI_STATE</code></td><td>Required by the Firebase / Google Play services libraries for connectivity checks</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>Haptic feedback during gameplay; can be turned off in the in-game settings</td></tr>
+</table>
+
+<h2>5. Legal basis and purpose limitation</h2>
+<p>
+  Where the EU/UK GDPR applies, we process device-side game data to perform the service you requested
+  (playing the game), and we process analytics data on the basis of our legitimate interest in
+  measuring and improving the App, or on the basis of your consent where consent is required by
+  local law. Where the app is distributed in jurisdictions requiring consent for analytics, the
+  consent prompt shown in the App governs whether analytics are enabled.
+</p>
+
+<h2>6. Sharing and international transfer</h2>
+<p>
+  We share data only with the service provider below. We do not sell data and we do not share it with
+  data brokers or advertising networks.
+</p>
+<table>
+  <tr><th>Recipient</th><th>Role</th><th>Their policy</th></tr>
+  <tr>
+    <td>Google LLC / Google Ireland Ltd (Google Analytics for Firebase)</td>
+    <td>Analytics processor</td>
+    <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> ·
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+  </tr>
+</table>
+<p>
+  Analytics data may be processed on Google servers outside your country, including in the United States.
+  We may also disclose data if required by applicable law, legal process or a lawful government request.
+</p>
+
+<h2>7. Retention</h2>
+<ul>
+  <li><strong>On-device data:</strong> kept until you delete it, clear app data, or uninstall the App.</li>
+  <li><strong>Analytics data:</strong> retained in Google Analytics according to the retention period configured in the Firebase/GA4 console (default: 2 months for user-level data, up to 14 months maximum), after which it is deleted or aggregated by Google.</li>
+</ul>
+
+<h2>8. Your choices and rights</h2>
+<ul>
+  <li><strong>Delete all your data:</strong> uninstall the App, or go to Android <em>Settings &rarr; Apps &rarr; Roblock &rarr; Storage &rarr; Clear data</em>. This removes your save, settings, local analytics logs and the on-device player identifier.</li>
+  <li><strong>Reset progress in-game:</strong> use the reset option in the game settings to clear level progress and virtual resources.</li>
+  <li><strong>Turn off haptics:</strong> in the in-game settings panel.</li>
+  <li><strong>Access, correction, deletion, objection, portability:</strong> because we hold no account and no directly identifying data, we generally cannot look you up. If you contact us at <a href="mailto:janet.yangwang@gmail.com">janet.yangwang@gmail.com</a> and provide your in-app player identifier, we will use it to locate and delete the corresponding analytics records where technically feasible, and will respond within 30 days.</li>
+</ul>
+
+<h2>9. Children</h2>
+<p>
+  The App is not directed to children under 13 (or the equivalent minimum age in your jurisdiction).
+  We do not knowingly collect personal information from children. If you believe a child has provided
+  us with personal information, contact us at <a href="mailto:janet.yangwang@gmail.com">janet.yangwang@gmail.com</a>
+  and we will delete it.
+</p>
+
+<h2>10. Security</h2>
+<p>
+  Analytics requests are transmitted over HTTPS. Device-side save data is kept in the App's private
+  storage area protected by the Android application sandbox. No method of transmission or storage is
+  completely secure, so we cannot guarantee absolute security.
+</p>
+
+<h2>11. Changes to this policy</h2>
+<p>
+  We may update this policy when the App changes. The "Last updated" date at the top will change, and
+  material changes will be announced in the app store listing or inside the App. Continuing to use the
+  App after an update means you accept the revised policy.
+</p>
+
+<h2>12. Contact</h2>
+<p>
+  <strong>Janet Wang</strong><br />
+  Email: <a href="mailto:janet.yangwang@gmail.com">janet.yangwang@gmail.com</a><br />
+  Address: 38 Chiswick Lane<br />
+  London - W4 2JQ<br />
+  United Kingdom (GB)
+</p>
+
+</body>
+</html>
